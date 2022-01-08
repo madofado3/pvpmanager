@@ -6,12 +6,29 @@
 		.name { position:absolute; top:15px; left:25px; font-size:19px;  }
 		.imgholder { position:absolute; top: 30px; left: 210px; }
 		.img {  width:50px; height:auto; }
-		.melee { position:absolute; top: 40px; left: 40px; }
-		.ranged { position:absolute; top: 40px; left: 140px; }
-		.mage { position:absolute; top: 70px; left: 40px; }
-		.summon { position:absolute; top: 70px; left: 140px; }
-		.speed { position:absolute; top: 100px; left: 90px; }
+		.melee { position:absolute; top: 70px; left: 40px; }
+		.ranged { position:absolute; top: 70px; left: 140px; }
+		.mage { position:absolute; top: 100px; left: 40px; }
+		.summon { position:absolute; top: 100px; left: 140px; }
+		.speed { position:absolute; top: 130px; left: 90px; }
 	</style>
+	<script>
+		const item1 {name:"Solar Flare Helmet", img:"Solar_Flare_Helmet.png", melee:14, ranged:0, mage:0, summon:0, speed:0};
+		
+		window.onload = function() {
+			boot();
+		}
+		
+		function boot () {
+			name1.innerText = item1.name;
+			img1.src = item1.img;
+			melee1.innerText = item1.melee;
+			ranged1.innerText = item1.ranged;
+			mage1.innerText = item1.mage;
+			summon1.innerText = item1.summon;
+			speed1.innerText = item1.speed;
+		}
+	</script>
 </head>
 <body>
   <div style="display: flex; margin-top: -5px; align-items: center; flex-wrap: wrap; justify-content: center;">
@@ -23,6 +40,15 @@
 			<div class="mage"><span>0</span><span>%</span></div>
 			<div class="summon"><span>0</span><span>%</span></div>
 			<div class="speed"><span>0</span><span>%</span></div>
+		</div>
+		<div class="box">
+			<div class="name"><span id="name1"></span></div>
+			<div class="imgholder"><img class="img" id="img1"></img></div>
+			<div class="melee" id="melee1"><span>14</span><span>%</span></div>
+			<div class="ranged" id="ranged1"><span>0</span><span>%</span></div>
+			<div class="mage" id="mage1"><span>0</span><span>%</span></div>
+			<div class="summon" id="summon1"><span>0</span><span>%</span></div>
+			<div class="speed" id="speed1"><span>0</span><span>%</span></div>
 		</div>
   </div>
 </body>
