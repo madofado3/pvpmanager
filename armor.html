@@ -3,20 +3,21 @@
 <head>
 	<style>
 		.box { width:300px; height:170px; background:#3EB489; position:relative; border-radius:8px; border: solid lightgray 2px; }
-		.name {}
-		.img { position:relative; top: 10px; left: 210px; width:80px; height:auto; }
-		.melee { position:absolute; top: 80px; left: 100px; }
-		.ranged { position:absolute; top: 80px; left: 200px; }
-		.mage { position:absolute; top: 110px; left: 100px; }
-		.summon { position:absolute; top: 110px; left: 200px; }
-		.speed { position:absolute; top: 140px; left: 150px; }
+		.name { positon:absolute; top:20px; left:30px;  }
+		.imgholder { position:absolute; top: 30px; left: 210px; }
+		.img {  width:80px; height:auto; }
+		.melee { position:absolute; top: 80px; left: 60px; }
+		.ranged { position:absolute; top: 80px; left: 160px; }
+		.mage { position:absolute; top: 110px; left: 60px; }
+		.summon { position:absolute; top: 110px; left: 160px; }
+		.speed { position:absolute; top: 140px; left: 110px; }
 	</style>
 </head>
 <body>
   <div style="display: flex; margin-top: -5px; align-items: center; flex-wrap: wrap; justify-content: center;">
 		<div class="box">
 			<div class="Name"><span>Solar Flare Helmet</span></div>
-			<div class="img"><img src="Solar_Flare_Helmet.png"></img></div>
+			<div class="imgholder"><img class="img" src="Solar_Flare_Helmet.png"></img></div>
 			<div class="melee"><span>14</span><span>%</span></div>
 			<div class="ranged"><span>0</span><span>%</span></div>
 			<div class="mage"><span>0</span><span>%</span></div>
