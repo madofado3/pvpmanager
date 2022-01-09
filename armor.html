@@ -21,8 +21,8 @@
 		
 		function boot () {
 			for (let i=1; i<40; i++) {
-				let item = document.getElementById("item" + i);
-				let title = document.getElementById("name" + i);
+				var item = document.getElementById("item" + i);
+				var title = document.getElementById("name" + i);
 				title.innerText = item.name;
 				img1.src = item1.imgpic;
 				melee1.innerText = item1.meleedmg;
