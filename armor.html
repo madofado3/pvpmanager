@@ -13,25 +13,38 @@
 		.speed { position:absolute; top: 130px; left: 90px; }
 	</style>
 	<script>
-		const item1 =  {name:"Solar Flare Helmet", imgpic:"Solar_Flare_Helmet.png", meleedmg:14, rangeddmg:0, magedmg:0, summondmg:0, speeddmg:0};
+		const items =  [
+			{name:"Solar Flare Helmet", imgpic:"Solar_Flare_Helmet.png", meleedmg:14, rangeddmg:0, magedmg:0, summondmg:0, speeddmg:0}
+		];
 		
 		window.onload = function() {
 			boot();
 		}
 		
 		function boot () {
-			for (let i=1; i<40; i++) {
-				var itemtemp = "item" + i;
-				var item = document.getElementById(itemtemp);
-				var titletemp = "title" + i;
-				var title = document.getElementById(titletemp);
+			for (let i=0; i<items.length; i++) {
+				let item = item[i]
+				let titletemp = "title" + i;
+				let imgtemp = "img" + i;
+				let meleetemp = "melee" + i;
+				let rangedtemp = "ranged" + i;
+				let magetemp = "mage" + i;
+				let summontemp = "summon" + i;
+				let speedtemp = "speed" + i;
+				let title = document.getElementById(titletemp);
+				let img = document.getElementById(imgtemp);
+				let melee = document.getElementById(meleetemp);
+				let ranged = document.getElementById(rangedtemp);
+				let mage = document.getElementById(magetemp);
+				let summon = document.getElementById(summontemp);
+				let speed = document.getElementById(speedtemp);
 				title.innerText = item.name;
-				img1.src = item1.imgpic;
-				melee1.innerText = item1.meleedmg;
-				ranged1.innerText = item1.rangeddmg;
-				mage1.innerText = item1.magedmg;
-				summon1.innerText = item1.summondmg;
-				speed1.innerText = item1.speeddmg;
+				img.src = item.imgpic;
+				melee.innerText = item.meleedmg;
+				ranged.innerText = item.rangeddmg;
+				mage.innerText = item.magedmg;
+				summon.innerText = item.summondmg;
+				speed.innerText = item.speeddmg;
 			}
 		}
 	</script>
