@@ -20,7 +20,7 @@
 		}
 		
 		function boot () {
-			for (i=1, i<40, i++) {
+			for (let i=1; i<40; i++) {
 				let item = document.getElementByID ("item" + i);
 				let name = document.getElementByID("name" + i);
 				name.innerText = item.name;
