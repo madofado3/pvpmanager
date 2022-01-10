@@ -13,15 +13,15 @@
 		.speed { position:absolute; top: 130px; left: 90px; }
 	</style>
 	<script>
-		const items =  [
-			{name:"Solar Flare Helmet", imgpic:"Solar_Flare_Helmet.png", meleedmg:14, rangeddmg:0, magedmg:0, summondmg:0, speeddmg:0}
-		];
-		
+				
 		window.onload = function() {
 			boot();
 		}
 		
 		function boot () {
+			const items =  [
+				{name:"Solar Flare Helmet", imgpic:"Solar_Flare_Helmet.png", meleedmg:14, rangeddmg:0, magedmg:0, summondmg:0, speeddmg:0}
+			];
 			for (let i=0; i<items.length; i++) {
 				let item = item[i]
 				let titletemp = "title" + i;
